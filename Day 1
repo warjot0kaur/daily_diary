@@ -1,0 +1,15 @@
+On the first day i leared that what is linux and how to install linux operating system.
+It was about what is operating system ans types of operating system 
+There is Graphical user interface (GUI) for example :- Windows
+and command line interface (CLI) for example :- UNIX / LINUX
+## Booting 
+Booting is a process of starting up the operating system.
+## Boot code
+Whenever we switch on te computer small part of operating system known as boot loader into RAM to start boot process.
+I’ve developed a practical understanding of Linux, both GUI and CLI. You can:
+
+- Navigate major Linux distributions and understand their architecture.  
+- Perform file operations (`ls`, `cd`, `cp`, `mv`, `rm`) and manage permissions (`chmod`, `chown`).  
+- Monitor processes (`ps`, `top`) and manage users/groups.  
+- Automate tasks using Bash scripting and package managers (`apt`, `yum`).  
+- Utilize text editors (`vim`, `nano`) and access system documentation.  
