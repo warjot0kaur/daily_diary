@@ -1,0 +1,56 @@
+After that we started computer networking with disassembling the CPU and motherboard analization
+# 🧩 Components of a Motherboard
+
+Understanding the motherboard helps you see how all PC parts connect and communicate.
+
+---
+
+## 1. CPU Socket
+
+- The slot for the **Central Processing Unit (CPU)** — the “brain” of the computer.
+- Common types: Intel LGA (e.g., LGA1700, LGA1851), AMD AM5.
+- Must match CPU compatibility exactly :contentReference[oaicite:2]{index=2}.
+
+---
+
+## 2. Chipset (Northbridge & Southbridge / PCH)
+
+- **Northbridge** (older boards): connected CPU to RAM and GPU.
+- **Southbridge** (older boards): managed USB, SATA, audio, BIOS, etc. :contentReference[oaicite:3]{index=3}.
+- **Platform Controller Hub (PCH)** (modern Intel/AMD): replaces southbridge functions :contentReference[oaicite:4]{index=4}.
+
+---
+
+## 3. DIMM / RAM Slots
+
+- Hold modules of **Random Access Memory (RAM)**.
+- Number of slots varies — more slots = more memory capacity :contentReference[oaicite:5]{index=5}.
+
+---
+
+## 4. Expansion Slots
+
+- **PCIe x16**: for dedicated GPUs.  
+- **PCIe x1** / **PCI**: for smaller cards (network, sound, etc.) :contentReference[oaicite:6]{index=6}.
+
+---
+
+## 5. Storage Connectors
+
+- **SATA** ports: connect HDDs/SSDs.  
+- **M.2** slots: high-speed NVMe SSDs :contentReference[oaicite:7]{index=7}.
+
+---
+
+## 6. Power Connectors & VRMs
+
+- **24-pin ATX** connector: main power input.  
+- **8-pin CPU power** connector: dedicated CPU power.  
+- **Voltage Regulator Modules (VRMs)**: supply stable power to CPU/RAM :contentReference[oaicite:8]{index=8}.
+
+---
+
+## 7. BIOS/UEFI Chip & CMOS Battery
+
+- Chip storing firmware (BIOS/UEFI) and system startup instructions.  
+- **CMOS battery**
