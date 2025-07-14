@@ -1,0 +1,28 @@
+And then we learnt the basics of bash scripting and some common rules 
+# 📘 Bash Scripting Basics
+
+A concise guide to building and understanding simple yet powerful Bash scripts.
+
+---
+
+## 1. What is Bash?
+
+- **Bash** (Bourne-Again SHell) is a Unix/Linux command interpreter and scripting language.
+- It enables task automation, system management, and efficient workflow scripting :contentReference[oaicite:0]{index=0}.
+
+---
+
+## 2. Getting Started
+
+1. Add the **shebang** at the top:
+   ```bash
+   #!/bin/bash
+
+2. Write a simple script:
+  echo "Hello, World!"
+
+3. Make it executable:
+  chmod +x script.sh
+
+4.Run it:
+  ./script.sh
