@@ -3,7 +3,10 @@ In the last session we learnt about what is git and some common commands of git
 
 ## What is Git?
 
-Git is a distributed version control system that tracks changes in source code during software development. It allows multiple developers to work on a project simultaneously, providing tools to manage changes, branches, and collaboration. Git was created by Linus Torvalds in 2005 and has since become the most widely used version control system. :contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7}
+Git is a distributed version control system that tracks changes in source code during software development.
+
+It allows multiple developers to work on a project simultaneously, providing tools to manage changes, branches, and collaboration.
+Git was created by Linus Torvalds in 2005 and has since become the most widely used version control system. :contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7}
 
 ---
 
