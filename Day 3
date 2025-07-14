@@ -1,0 +1,67 @@
+On the third day i installed github by dual boot
+# 🪟 Dual‑Boot Unix/Linux with Windows
+
+Follow this guide to install Unix/Linux alongside Windows, enabling you to choose at startup between both operating systems.
+
+---
+
+## 1. Backup Your Data  
+Before you start, back up all important files. Even careful partitioning can cause data loss :contentReference[oaicite:2]{index=2}.
+
+---
+
+## 2. Shrink Your Windows Partition  
+- In Windows, open **Disk Management** (Win + X → Disk Management).  
+- Right-click your main partition (often C:) and select **Shrink Volume**.  
+- Allocate around **20–80 GB** for Linux :contentReference[oaicite:3]{index=3}.  
+
+---
+
+## 3. Download Linux ISO & Create Bootable USB  
+- Choose a Linux distribution (e.g., Ubuntu, Linux Mint) and download its ISO.  
+- Use a tool like **Etcher**, **Rufus**, or **UNetbootin** to write the ISO to a USB drive :contentReference[oaicite:4]{index=4}.
+
+---
+
+## 4. Disable Secure Boot / Fast Startup (If Needed)  
+- In Windows, disable **Fast Startup** (Control Panel → Power Options).  
+- On some UEFI systems, disable **Secure Boot** in BIOS/UEFI :contentReference[oaicite:5]{index=5}.
+
+---
+
+## 5. Boot from USB & Start Installer  
+- Insert the USB, reboot, and press the BIOS/UEFI key (e.g., F12, ESC).  
+- Select the USB drive and choose **Try** or **Install** Linux.
+
+---
+
+## 6. Choose Installation Type  
+Select **“Install alongside Windows Boot Manager”** or **“Something else”** (manual partitioning).
+
+### If Manual Partitioning:
+- Create an **EXT4 root partition (/**) **(~20 GB).  
+- Optionally create a **swap** partition (~equal to RAM) and a **/home** partition for user files :contentReference[oaicite:6]{index=6}.
+
+---
+
+## 7. Proceed with Installation  
+- Follow prompts: choose language, timezone, keyboard layout, and create a Linux user.  
+- Install Linux on the selected partition(s).  
+- The installer sets up **GRUB** to manage boot choices :contentReference[oaicite:7]{index=7}.
+
+---
+
+## 8. Reboot & Choose OS  
+- Remove the USB and reboot.  
+- The **GRUB menu** appears—choose between Linux and Windows.  
+- If it boots straight to Windows, reboot into BIOS/UEFI, and ensure Linux/GRUB is first in boot order :contentReference[oaicite:8]{index=8}.
+
+---
+
+## 9. (Optional) Fix Boot or GRUB  
+If Windows overwrote GRUB:
+
+```bash
+# Boot from Linux live USB
+sudo mount /dev/sdXY /mnt    # Replace sdXY with your Linux root
+sudo grub-install --root-directory=/mnt /dev/sdX
