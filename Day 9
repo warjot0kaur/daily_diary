@@ -1,0 +1,31 @@
+Then we started web basics that how to create websites and give them styling use HTML and CSS
+I’ve grasped basic web development:
+
+- Structured pages with **HTML** (headings, links, lists, forms).  
+- Styled aesthetics with **CSS** (layout, design).  
+- Added interactivity using basic **JavaScript**.  
+- Observed how HTTP powers client–server communication.  
+- Deployed simple static pages and tested them locally.
+
+# 🌐 HTML & CSS Basics Guide
+
+## 📘 What is HTML?
+
+**HTML (HyperText Markup Language)** is the standard language used to create and design web pages. It structures the content on the web, such as text, images, links, and other multimedia elements.
+
+### 🔑 Basic HTML Structure
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Webpage</title>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is a simple webpage created with HTML.</p>
+  <a href="https://www.example.com">Visit Example</a>
+</body>
+</html>
