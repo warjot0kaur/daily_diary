@@ -1,0 +1,68 @@
+And on the next day i learened that how to install linux using virtual box
+# Install Unix/Linux on VirtualBox
+
+Follow these steps to set up a Unix or Linux system in a virtual environment using Oracle VirtualBox.
+
+---
+
+## 1. Download and Install VirtualBox
+
+1. Go to the official VirtualBox website and download the installer for your host OS (e.g., Windows, macOS, Linux).  
+2. Run the installer and follow the prompts with default settings.  
+3. (Optional) Download and install the VirtualBox Extension Pack for USB 2.0/3.0, webcam, RDP, etc. :contentReference[oaicite:1]{index=1}
+
+---
+
+## 2. Download the Unix/Linux ISO
+
+- Choose a Unix or Linux distribution (e.g., Ubuntu, Debian, CentOS).  
+- Download the latest ISO from the official website. :contentReference[oaicite:2]{index=2}
+
+---
+
+## 3. Enable Virtualization
+
+- In your BIOS/UEFI settings:
+  - Enable **Intel VT‑x** or **AMD‑V**
+  - Disable Hyper-V on Windows (if applicable) :contentReference[oaicite:3]{index=3}
+
+---
+
+## 4. Create a New Virtual Machine
+
+1. Open VirtualBox → click **New**
+2. Enter a name (e.g., “Ubuntu VM”), which auto-selects Type: Linux, Version: Ubuntu (64-bit) :contentReference[oaicite:4]{index=4}
+3. Allocate RAM (2 GB+ recommended; 8 GB for better performance) :contentReference[oaicite:5]{index=5}
+4. Create a virtual hard disk:
+   - Type: VDI
+   - Storage: Dynamically allocated
+   - Size: 20–30 GB minimum :contentReference[oaicite:6]{index=6}
+
+---
+
+## 5. Attach the ISO & Configure VM
+
+1. Select your VM → click **Settings** → go to **Storage**
+2. Under **Controller: IDE**, click the empty CD icon → choose your downloaded ISO :contentReference[oaicite:7]{index=7}
+3. Optionally adjust:
+   - **System → Processor**: assign 2+ cores
+   - **Display → Video Memory**: set to 128 MB, enable 3D acceleration if needed :contentReference[oaicite:8]{index=8}
+
+---
+
+## 6. Start & Install
+
+1. Click **Start** to boot from the ISO :contentReference[oaicite:9]{index=9}  
+2. Follow the installer steps: choose language, timezone, keyboard, disk partitioning, user account setup  
+3. Let the installation complete, then reboot when prompted. :contentReference[oaicite:10]{index=10}
+
+---
+
+## 7. Post-Install: Guest Additions (Recommended)
+
+- After reboot, go to **Devices → Insert Guest Additions CD image**
+- Inside the VM, run:
+  ```bash
+  sudo apt update && sudo apt install -y build-essential dkms
+  sudo mount /dev/cdrom /mnt
+  sudo /mnt/VBoxLinuxAdditions.run
