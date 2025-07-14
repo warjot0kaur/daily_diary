@@ -1,0 +1,32 @@
+Then we get some knowledge about PC troubleshooting 
+There are two types of troubleshooting:
+- Hardware troubleshooting 
+- Software troubleshooting
+# 🛠️ Hardware and Software Troubleshooting Guide
+
+## 🖥️ Hardware Troubleshooting
+
+### 🔍 Common Hardware Issues
+
+- **Power Failures**: The system doesn't power on or shuts down unexpectedly.
+- **Overheating**: Excessive heat can cause system instability.
+- **Peripheral Failures**: Devices like keyboards, mice, or printers not functioning.
+- **Display Issues**: Monitor not displaying anything or showing artifacts.
+- **Hard Drive Failures**: System crashes, slow performance, or data loss.:contentReference[oaicite:10]{index=10}
+
+### 🧰 Troubleshooting Steps
+
+1. **Initial Checks**:
+   - Ensure all cables are securely connected.
+   - Verify power supply functionality.
+   - Check for visible damage or loose components.:contentReference[oaicite:17]{index=17}
+
+2. **Reseating Components**:
+   - Power off the system.
+   - Reseat RAM, GPU, and storage devices to ensure proper connections.:contentReference[oaicite:22]{index=22}
+
+3. **Isolate the Problem**:
+   - Disconnect non-essential peripherals.
+   - Test with known working components if available.:contentReference[oaicite:27]{index=27}
+
+4. **Use Diagnostic :contentReference[oaicite:32]{index=32}**
