@@ -1,0 +1,43 @@
+After that we created ethernet cables by using:
+
+# 🛠️ How to Make an Ethernet Cable (RJ45 – T‑568B Standard)
+
+A practical step-by-step guide to crimping your own Ethernet patch cable.
+
+---
+
+## ✅ Tools & Materials
+
+- Bulk **Ethernet cable** (Cat5e or Cat6)  
+- **RJ45 (8P8C) connectors**  
+- **RJ45 crimping tool** (with stripper & cutter)  
+- **Cable tester** (optional but recommended)  
+- Scissors or wire cutters :contentReference[oaicite:2]{index=2}
+
+---
+
+## 1. Cut to Length
+
+Cut your cable to the desired length — best practice allows for a little extra slack :contentReference[oaicite:3]{index=3}.
+
+---
+
+## 2. Strip Outer Jacket
+
+- Use the stripper on the crimp tool to remove about 2.5 cm (1 inch) of the outer jacket.  
+- Rotate the tool around the cable, then pull off the jacket.  
+- Inspect to ensure no inner conductor is nicked :contentReference[oaicite:4]{index=4}.
+
+---
+
+## 3. Untwist & Straighten Wires
+
+- Separate the 4 twisted pairs (8 wires total) and straighten them.  
+- Cut away any internal divider or filler :contentReference[oaicite:5]{index=5}.
+
+---
+
+## 4. Arrange in T‑568B Order
+
+From left to right (clip side down):
+
